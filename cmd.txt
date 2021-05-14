@@ -6,4 +6,4 @@ systemctl stop 3proxy.service
 to stop proxy
   /usr/local/3proxy/conf/add3proxyuser.sh
  2401:78c0::c007 
- python3.6 gen_squid.py --ipv6_subnet_full 2401:78c0::c007/48 --net_interface eth0 --pool_name squidv6  --number_ipv6 2000 --unique_ip 1 --start_port 10000
+ python3.6 gen_squid.py --ipv6_subnet_full 2401:c080:1400:4c13/48 --net_interface eth0 --pool_name squidv6  --number_ipv6 2000 --unique_ip 1 --start_port 10000
