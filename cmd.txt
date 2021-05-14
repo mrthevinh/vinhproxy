@@ -1,2 +1,9 @@
 docker run -p 30000-40000:30000-40000 centos:7
 docker run -it --expose=7000-8000 centos:7
+systemctl start 3proxy.service
+to start proxy
+systemctl stop 3proxy.service
+to stop proxy
+  /usr/local/3proxy/conf/add3proxyuser.sh
+ 2401:78c0::c007 
+ python3.6 gen_squid.py --ipv6_subnet_full 2401:78c0::c007/48 --net_interface eth0 --pool_name squidv6  --number_ipv6 2000 --unique_ip 1 --start_port 10000
